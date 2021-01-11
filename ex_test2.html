@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">    
+</head>
+<body>
+    <h2>연습문제 2</h2>
+    <h3>BMI를 계산하는 프로그램을 작성해 봅시다.</h3>
+    <script>
+        var inserheight = prompt("키를 입력하세요.(미터값 숫자만)");
+        var inserweight = prompt("몸무게를 입력하세요.(숫자만)");
+        var s1 = Number(inserheight);
+        var s2 = Number(inserweight);
+        var totalval = inserweight / (inserheight*inserheight);
+        var s3 = Number(totalval);
+        var totalbalAfter = Math.floor(s3);
+
+        console.log("입력하신 키 값은 " + inserheight + "입니다.");
+        console.log("입력하신 몸무게 값은 " + inserweight + "입니다.");
+        console.log("BMI 지수 = 몸무게(kg) ÷ (신장(m) × 신장(m))의 공식으로 계산됩니다.");
+        console.log("totalval" + totalval);
+        console.log("s3" + s3 );
+        console.log("totalbalAfter" + totalbalAfter );
+        console.log("그 결과 BMI 지수값 " + totalbalAfter + " = " + inserweight + "(kg) ÷ (" + inserheight + "(m) × "+ inserheight + "(m))");
+
+    </script>
+</body>
+</html>
