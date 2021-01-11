@@ -9,13 +9,14 @@
             var insertNumber = prompt("숫자를 입력해 주세요.");
             var str = Number(insertNumber);
             var strVal = (str%2);
-                        
-            if(strVal == 0){
-                console.log("입력하신" + str + "는(은) 짝수입니다.");
+
+            if(str == 0){
+                console.log("입력하신 숫자" + str + "은 0입니다.");
+            }else if(strVal == 0){
+                console.log("입력하신 숫자" + str + "는(은) 짝수입니다.");
             }else{
-                console.log("입력하신" + str + "는(은) 홀수입니다.");
-            }
-        
+                console.log("입력하신 숫자" + str + "는(은) 홀수입니다.");
+            }        
         </script>
     </body>
 </html>
