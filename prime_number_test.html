@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <h1>소수판별 프로그램</h1>
+        <p>사용자가 입력한 숫자가 소수인지 아닌지 알려주는 프로그램을 작성해 봅시다.</p>
+        <script>
+            var isPrime = true; // 소수값 초기화
+            var n = Number(prompt("2이상의 정수를 입력해 주세요.")) //prompt로 입력받아서 숫자로 초기화
+            for (var i = 2; i <n; i++){ //i 가 2부터 증가하면서 입력된 숫자값 까지 나눌수 있는지 루프로 확인
+                if(n % i === 0){ // 입력값을 증가하는 i 값으로 나눴을 때 0 이면 소수
+                    isPrime = false;
+                    break; //정답을 찾으면 루프를 중단.
+                }
+                console.log(isPrime, i);
+            }
+            if(isPrime){
+                document.write(n + "은(는) 소수입니다.");
+            }else{
+                document.write(n + "은(는) 소수가 아닙니다.");
+            }
+        </script>
+    </body>
+</html>
